@@ -107,9 +107,9 @@ docker compose up -d
 
 | URL                         | Путь                | Язык       | Описание           |
 |-----------------------------|---------------------|------------|--------------------|
-| `https://localhost/docs /`  | `api/`              | PHP        | API                |
-| `https://localhost /`       | `pwa/`              | JavaScript | приложение Next.js |
-| `https://localhost/admin /` | `pwa/pages/admin/`  | JavaScript | Админка            |
+| `https://localhost/docs/`  | `api/`              | PHP        | API                |
+| `https://localhost/`       | `pwa/`              | JavaScript | приложение Next.js |
+| `https://localhost/admin/` | `pwa/pages/admin/`  | JavaScript | Админка            |
 
 Чтобы просмотреть журналы контейнера, запустите:
 
@@ -243,16 +243,6 @@ API Platform предоставляет описание API в формате [
 Нам нравится [Postman](https://www.getpostman.com/).
 Он отлично работает с API Platform, имеет встроенную поддержку OpenAPI,
 позволяет легко писать функциональные тесты и есть хорошие возможности для совместной работы в команде.
-
-## Bringing your Own Model
-
-Your API Platform project is now 100% functional. Let's expose our own data model.
-Our bookshop API will start simple. It will be composed of a `Book` resource type and a `Review` one.
-
-Books have an id, an ISBN, a title, a description, an author, a publication date and are related to a list of reviews.
-Reviews have an id, a rating (between 0 and 5), a body, an author, a publication date and are related to one book.
-
-Let's describe this data model as a set of Plain Old PHP Objects (POPO):
 
 ## Использование собственной модели
 
